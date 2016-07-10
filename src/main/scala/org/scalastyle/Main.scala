@@ -124,10 +124,10 @@ object Main {
       case None =>
     }
 
-    if (!mc.quiet) println("Processed " + outputResult.files + " file(s)")
-    if (!mc.quiet) println("Found " + outputResult.errors + " errors")
-    if (!mc.quiet) println("Found " + outputResult.warnings + " warnings")
-    if (!mc.quiet) println("Finished in " + (now - start) + " ms")
+    if (mc.verbose) println("Processed " + outputResult.files + " file(s)")
+    if (mc.verbose) println("Found " + outputResult.errors + " errors")
+    if (mc.verbose) println("Found " + outputResult.warnings + " warnings")
+    if (mc.verbose) println("Finished in " + (now - start) + " ms")
 
     // scalastyle:on regex
 

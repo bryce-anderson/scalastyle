@@ -5,6 +5,7 @@ target
 .idea
 .worksheet
 *.sc
+*.swp
 .cache
 .classpath
 .project
