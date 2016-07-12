@@ -356,7 +356,7 @@ class ImportOrderChecker extends ScalariformChecker {
     for (i <- 0 until max) {
       val comp1 = imp1Components(i)
       val comp2 = imp2Components(i)
-      val result = compareNames(comp1, comp2, isImport = true)
+      val result = compareNames(comp1.toLowerCase, comp2.toLowerCase, isImport = true)
       if (result != 0) {
         return result
       }
